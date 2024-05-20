@@ -367,10 +367,12 @@ Xét $Y_n = X_{n+1} - X_n$
 - Ta có:
 $Y_{n+1} = X_{n+2} - X_{n+2} = (A \cdot X_{n+1} + K) - (A \cdot X_n + K) = A \cdot (X_{n+1} - X_n) = A \cdot Y_n$
 - Với $Y_n= A \cdot Y_{n-1}$ ta sẽ có:
-$$\begin{align*}
+$$\begin{split}\begin{align*}
 Y_{n+1} &\equiv A \cdot Y_{n} \equiv A^2 \cdot Y_{n-1} \pmod m\\
 Y_{n+2} &\equiv A \cdot Y_{n+1} \equiv A^3 \cdot Y_{n-1} \pmod m\\
-\end{align*}$$
+\end{align*}\end{split}$$
+- Suy ra:
+$$Y_{n+2} \cdot Y_n - {Y_{n+1}}^2 \equiv Y_{n-1} \cdot (A^4-A^4) \equiv 0 \pmod m$$ 
 - Suy ra:
 $$Y_{n+2} \cdot Y_n - {Y_{n+1}}^2 \equiv Y_{n-1} \cdot (A^4-A^4) \equiv 0 \pmod m$$ 
 Như vậy chúng ta đã tạo ra một bội của $m$, thực hiện gcd cho các bội này ta tìm được $m$.
